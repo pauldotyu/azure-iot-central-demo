@@ -1,0 +1,252 @@
+[
+  {
+    "@id": "dtmi:refrigeratedTrucks0908:RefrigeratedTruck5of;1",
+    "@type": "Interface",
+    "contents": [
+      {
+        "@id": "dtmi:refrigeratedTrucks0908:RefrigeratedTruck5of:ContentsTemperature;1",
+        "@type": [
+          "Telemetry",
+          "Temperature"
+        ],
+        "displayName": {
+          "en": "Contents temperature"
+        },
+        "name": "ContentsTemperature",
+        "schema": "double",
+        "unit": "degreeCelsius"
+      },
+      {
+        "@id": "dtmi:refrigeratedTrucks0908:RefrigeratedTruck5of:ContentsState;1",
+        "@type": [
+          "Telemetry",
+          "State"
+        ],
+        "displayName": {
+          "en": "Contents state"
+        },
+        "name": "ContentsState",
+        "schema": {
+          "@id": "dtmi:refrigeratedTrucks0908:RefrigeratedTruck5of:ContentsState:schema;1",
+          "@type": "Enum",
+          "enumValues": [
+            {
+              "@id": "dtmi:refrigeratedTrucks0908:RefrigeratedTruck5of:ContentsState:schema:empty;1",
+              "displayName": {
+                "en": "empty"
+              },
+              "enumValue": "empty",
+              "name": "empty"
+            },
+            {
+              "@id": "dtmi:refrigeratedTrucks0908:RefrigeratedTruck5of:ContentsState:schema:full;1",
+              "displayName": {
+                "en": "full"
+              },
+              "enumValue": "full",
+              "name": "full"
+            },
+            {
+              "@id": "dtmi:refrigeratedTrucks0908:RefrigeratedTruck5of:ContentsState:schema:melting;1",
+              "displayName": {
+                "en": "melting"
+              },
+              "enumValue": "melting",
+              "name": "melting"
+            }
+          ],
+          "valueSchema": "string"
+        }
+      },
+      {
+        "@id": "dtmi:refrigeratedTrucks0908:RefrigeratedTruck5of:CoolingSystemState;1",
+        "@type": [
+          "Telemetry",
+          "State"
+        ],
+        "displayName": {
+          "en": "Cooling system state"
+        },
+        "name": "CoolingSystemState",
+        "schema": {
+          "@id": "dtmi:refrigeratedTrucks0908:RefrigeratedTruck5of:CoolingSystemState:schema;1",
+          "@type": "Enum",
+          "enumValues": [
+            {
+              "@id": "dtmi:refrigeratedTrucks0908:RefrigeratedTruck5of:CoolingSystemState:schema:on;1",
+              "displayName": {
+                "en": "on"
+              },
+              "enumValue": "on",
+              "name": "on"
+            },
+            {
+              "@id": "dtmi:refrigeratedTrucks0908:RefrigeratedTruck5of:CoolingSystemState:schema:off;1",
+              "displayName": {
+                "en": "off"
+              },
+              "enumValue": "off",
+              "name": "off"
+            },
+            {
+              "@id": "dtmi:refrigeratedTrucks0908:RefrigeratedTruck5of:CoolingSystemState:schema:failed;1",
+              "displayName": {
+                "en": "failed"
+              },
+              "enumValue": "failed",
+              "name": "failed"
+            }
+          ],
+          "valueSchema": "string"
+        }
+      },
+      {
+        "@id": "dtmi:refrigeratedTrucks0908:RefrigeratedTruck5of:TruckState;1",
+        "@type": [
+          "Telemetry",
+          "State"
+        ],
+        "displayName": {
+          "en": "Truck state"
+        },
+        "name": "TruckState",
+        "schema": {
+          "@id": "dtmi:refrigeratedTrucks0908:RefrigeratedTruck5of:TruckState:schema;1",
+          "@type": "Enum",
+          "enumValues": [
+            {
+              "@id": "dtmi:refrigeratedTrucks0908:RefrigeratedTruck5of:TruckState:schema:ready;1",
+              "displayName": {
+                "en": "ready"
+              },
+              "enumValue": "ready",
+              "name": "ready"
+            },
+            {
+              "@id": "dtmi:refrigeratedTrucks0908:RefrigeratedTruck5of:TruckState:schema:enroute;1",
+              "displayName": {
+                "en": "enroute"
+              },
+              "enumValue": "enroute",
+              "name": "enroute"
+            },
+            {
+              "@id": "dtmi:refrigeratedTrucks0908:RefrigeratedTruck5of:TruckState:schema:delivering;1",
+              "displayName": {
+                "en": "delivering"
+              },
+              "enumValue": "delivering",
+              "name": "delivering"
+            },
+            {
+              "@id": "dtmi:refrigeratedTrucks0908:RefrigeratedTruck5of:TruckState:schema:returning;1",
+              "displayName": {
+                "en": "returning"
+              },
+              "enumValue": "delivering",
+              "name": "returning"
+            },
+            {
+              "@id": "dtmi:refrigeratedTrucks0908:RefrigeratedTruck5of:TruckState:schema:loading;1",
+              "displayName": {
+                "en": "loading"
+              },
+              "enumValue": "loading",
+              "name": "loading"
+            },
+            {
+              "@id": "dtmi:refrigeratedTrucks0908:RefrigeratedTruck5of:TruckState:schema:dumping;1",
+              "displayName": {
+                "en": "dumping"
+              },
+              "enumValue": "dumping",
+              "name": "dumping"
+            }
+          ],
+          "valueSchema": "string"
+        }
+      },
+      {
+        "@id": "dtmi:refrigeratedTrucks0908:RefrigeratedTruck5of:Event;1",
+        "@type": [
+          "Telemetry",
+          "Event"
+        ],
+        "displayName": {
+          "en": "Event"
+        },
+        "name": "Event",
+        "schema": "string"
+      },
+      {
+        "@id": "dtmi:refrigeratedTrucks0908:RefrigeratedTruck5of:Location;1",
+        "@type": [
+          "Telemetry",
+          "Location"
+        ],
+        "displayName": {
+          "en": "Location"
+        },
+        "name": "Location",
+        "schema": "geopoint"
+      },
+      {
+        "@id": "dtmi:refrigeratedTrucks0908:RefrigeratedTruck5of:TruckID;1",
+        "@type": "Property",
+        "displayName": {
+          "en": "Truck ID"
+        },
+        "name": "TruckID",
+        "schema": "string",
+        "writable": false
+      },
+      {
+        "@id": "dtmi:refrigeratedTrucks0908:RefrigeratedTruck5of:OptimalTemperature;1",
+        "@type": [
+          "Property",
+          "Temperature"
+        ],
+        "displayName": {
+          "en": "Optimal Temperature"
+        },
+        "name": "OptimalTemperature",
+        "schema": "double",
+        "unit": "degreeCelsius",
+        "writable": true
+      },
+      {
+        "@id": "dtmi:refrigeratedTrucks0908:RefrigeratedTruck5of:GoToCustomer;1",
+        "@type": "Command",
+        "commandType": "synchronous",
+        "displayName": {
+          "en": "Go to customer"
+        },
+        "name": "GoToCustomer",
+        "request": {
+          "@type": "CommandPayload",
+          "displayName": {
+            "en": "Customer ID"
+          },
+          "name": "CustomerID",
+          "schema": "integer"
+        }
+      },
+      {
+        "@id": "dtmi:refrigeratedTrucks0908:RefrigeratedTruck5of:Recall;1",
+        "@type": "Command",
+        "commandType": "synchronous",
+        "displayName": {
+          "en": "Recall"
+        },
+        "name": "Recall"
+      }
+    ],
+    "displayName": {
+      "en": "RefrigeratedTruck"
+    },
+    "@context": [
+      "dtmi:iotcentral:context;2",
+      "dtmi:dtdl:context;2"
+    ]
+  }
+]
